@@ -2,6 +2,9 @@
 A simple Kotlin (JavaScript) app that calculates the Body Mass Index and pinpoints it on a chart.
 The BMI is calculated in both, metric and imperial measurement systems.
 
+## Demo / Showcase / Tryout
+[And this is how it looks like...](http://www.loxal.net/proof-of-concept-incubator/bmi-calculator)
+
 ## Getting Started
 
 1. Run the “Serve through local web server” configuration:
