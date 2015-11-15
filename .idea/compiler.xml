@@ -22,9 +22,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="bmi-calculator" />
         <module name="kotlin-javascript-example-special-characters-lister" />
         <module name="kotlin-javascript-hello-world" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bmi-calculator" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

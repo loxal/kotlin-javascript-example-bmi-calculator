@@ -16,7 +16,11 @@
 
 package net.loxal.example.kotlin.bmi_calculator
 
-import kotlin.js.dom.html.*
+import org.w3c.dom.HTMLDivElement
+import org.w3c.dom.HTMLElement
+import org.w3c.dom.HTMLImageElement
+import org.w3c.dom.HTMLInputElement
+import kotlin.browser.document
 
 class BMIcalculator {
     private val bmiChart = document.getElementById("bmiChart") as HTMLImageElement
@@ -172,7 +176,7 @@ class BMIcalculator {
         bmiMarker.style.cssText = "position: absolute; top: ${y}px; left: ${x}px;"
     }
 
-    {
+    init {
         setBMIChartSize()
         initListeners()
 
@@ -180,8 +184,8 @@ class BMIcalculator {
     }
 
     private fun setBMIChartSize() {
-        bmiChart.width = 590.0
-        bmiChart.height = 480.0
+        bmiChart.width = 590
+        bmiChart.height = 480
     }
 
     private fun setMetricLabels() {
